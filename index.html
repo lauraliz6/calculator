@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>One-Pager Calculator Prototype</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background image -->
+<img class="bgMain" src="img/logo_big-01.png" alt="LMV Logo" />
+
+  <img class="headLogo" src="img/logo-basic.png" alt="LMV Logo" />
+  <h1>401(k) Savings at Age
+    <label for="age"></label>
+    <input type="text" id="retire-age" value="65"></input>
+  </h1>
+
+  <div class="savings-area">
+
+    <div class="your-savings group">
+      <div class="background-bar">
+        <div class="dot-y" style="background-color: white"></div>
+        <div class="dot-y" style="background-color: white"></div>
+        <div class="dot-y"></div>
+        <div class="dot-y"></div>
+      </div>
+      <div class="savings-bar" id="your-bar">
+      </div>
+      <h2>
+        Your Savings (<span id="your-placeholder">10%</span>):
+        <span class="amt" id="your">$10,000</span>
+      </h2>
+    </div>
+
+    <div class="typical-savings group">
+      <div class="background-bar">
+        <div class="dot one"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="savings-bar" id="typical-bar">
+      </div>
+      <h2>
+        Typical Savings (6%):
+        <span class="amt" id="typical">$10,000</span>
+      </h2>
+    </div>
+
+    <div class="ideal-savings group">
+      <div class="background-bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="savings-bar" id="ideal-bar">
+      </div>
+      <h2>
+        Ideal Savings (20%):
+        <span class="amt" id="ideal">$10,000</span>
+      </h2>
+    </div>
+
+  </div>
+
+
+  <div class="input-area">
+
+    <div id="your-contr">
+      <div id="container">
+        <div id="percent">
+          <div id="set">
+            <label for="percentInput"></label>
+            <input type="text" id="percentInput" value="10%"></input>
+          </div>
+          <div id="pointer"></div>
+        </div>
+      </div>
+      <div class="blank-percent-bar"></div>
+      <div class="percent-bar" id="percent-bar"></div>
+      <h2>Your Contribution</h2>
+    </div>
+
+    <div class="input-selects">
+
+      <div class="input age">
+        <label for="age">Age</label>
+        <input type="text" id="age" value="35"></input>
+      </div>
+
+      <div class="input bal">
+        <label for="bal">Current Balance</label>
+        <input type="text" id="bal" value="0"></input>
+      </div>
+
+      <div class="input income">
+        <label for="income">Income Level</label>
+        <select id="income">
+          <option value="$20k-40k">$20,000 - $40,000</option>
+          <option value="$40k-60k">$40,000 - $60,000</option>
+          <option value="$60k-80k">$60,000 - $80,000</option>
+          <option value="$80k-100k">$80,000 - $100,000</option>
+          <option value="$100k-120k">$100,000 - $120,000</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="return">
+      <h1 id="savings-return">
+        $10,000
+      </h1>
+    </div>
+
+    <p class="disclaimer">Calculation is based on a default company match of 50% up to 6% of employee contributions. Interest rate constant at 6% per month.</p>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>

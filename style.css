@@ -1,0 +1,283 @@
+
+body {
+  width: 510px;
+  color: #5a5a5a;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 10px auto;
+  text-transform: uppercase;
+}
+
+.headLogo {
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 27px;
+  margin: 20px 0 20px 0;
+  color: #5a5a5a;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.background-bar {
+  height: 14px;
+  width: 500px;
+  background-color: rgb(245, 252, 248);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  margin: -14.5px auto;
+}
+
+.dot, .dot-y {
+  height: 6px;
+  width: 6px;
+  background-color: #199450;
+  border-radius: 50%;
+  transition: 1s all;
+}
+
+.typical-savings .dot.one {
+  background-color: white;
+}
+
+.ideal-savings .dot {
+  background-color: white;
+}
+
+.savings-area {
+  margin-top: 50px;
+  margin-bottom: 108px;
+}
+
+.savings-area h2 {
+  padding: 0;
+  margin: 7px 0;
+}
+
+.savings-area .group {
+  margin-bottom: 46px;
+}
+
+.savings-bar {
+  height: 15px;
+  /* width: 500px; */
+  background-color: #199450;
+  border-radius: 10px;
+  transition: 1s all;
+}
+
+#your-contr {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+#typical-bar {
+  transition: 0s all;
+}
+
+#your-bar {
+  width: 250px;
+}
+
+#container {
+  position: absolute;
+  left: -42px;
+}
+
+.blank-percent-bar {
+  height: 13px;
+  width: 498px;
+  border: 2px solid #E6E6E6;
+  border-radius: 10px;
+  margin: -15.5px 2px -15.5px -1px;
+  background-color: rgb(245, 252, 248);
+}
+
+.percent-bar {
+  height: 15px;
+  width: 255px;
+  background-color: #000000;
+  background-color: #199450;
+  border-radius: 10px;
+}
+
+#percent {
+  position: absolute;
+  top: -77px;
+  margin: 20px 0;
+  left: 250px;
+  border: 2px solid #199450;
+  border-radius: 14px;
+  font-size: 14px;
+  padding: 12px;
+  width: 58px;
+  text-align: center;
+  background-color: rgb(245, 252, 248);
+}
+
+#percentInput {
+  font-size: 14px;
+  width: 3em;
+  color: #5a5a5a;
+  text-align: center;
+  border: none;
+  height: 1em;
+  background-color: rgb(245, 252, 248);
+}
+
+#pointer {
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid #199450;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 29px;
+  top: 40px;
+}
+
+.input-selects {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+.input {
+  background-color: #199450;
+  height: 61px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.input input {
+  height: 61px;
+  border: 1px solid #E6E6E6;
+  padding: 15px;
+  color: #E6E6E6;
+  font-size: 17px;
+  font-family: 'Roboto Condensed', sans-serif;
+  align-self: flex-end;
+}
+
+.input input:focus {
+  color: #199450;
+  border-color: #199450;
+}
+
+
+.input select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 61px;
+  border: 1px solid #E6E6E6;
+  padding: 15px;
+  color: #E6E6E6;
+  font-size: 17px;
+  font-family: 'Roboto Condensed', sans-serif;
+  align-self: flex-end;
+  width: 354px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  background-image: url('img/dd-arrow-lG.png');
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%
+}
+
+.input select:focus {
+  color: #199450;
+}
+
+.input label {
+  margin: auto;
+  /* font-weight: bold; */
+}
+
+#retire-age {
+  color: #199450;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  width: 2em;
+  border: none;
+  text-decoration: underline;
+}
+
+.age {
+  width: 186px;
+  display: flex;
+  margin: 0 9px 20px 0;
+}
+
+.age label {
+  width: 80px;
+  text-align: center;
+}
+
+.age input {
+  width: 106px;
+}
+
+.bal {
+  width: 305px;
+  display: flex;
+}
+
+.bal label {
+  width: 177px;
+  text-align: center;
+}
+
+.bal input {
+  width: 128px;
+}
+
+.income {
+  width: 501px;
+  display: flex;
+}
+
+.income label {
+  width: 150px;
+  text-align: center;
+}
+
+#savings-return {
+  border: 1px solid #5a5a5a;
+  color: #199450;
+  background-color: rgb(245, 252, 248);
+  text-align: right;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.bgMain {
+  color: #828282;
+  position: fixed;
+  z-index: -1;
+  right: -60px;
+  bottom: -40px;
+  width: 600px;
+  height: auto;
+  transition: 0.2s;
+  opacity: .5;
+}
+
+.disclaimer {
+  text-shadow: 1px 1px 2px white;
+}
